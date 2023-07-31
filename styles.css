@@ -1,0 +1,95 @@
+/*coller en haut a gauche */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f2f2;
+    color: #262528;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  header {
+    background-color: #cccdcf;
+    color: #f3f2f2;
+    padding: 20px;
+  }
+  .cv {
+    color: #f3f2f2;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 100px;
+  }
+  
+  .contacte {
+    color: #f3f2f2;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 200px;
+  }
+
+
+/* Style de base pour le bouton */
+#dark-mode-toggle {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-image: url('image/lune.png'); /* Défaut - Soleil */
+}
+
+/* Style pour la lune en mode clair */
+.light-mode #dark-mode-toggle {
+  background-image: url('image/lune.png'); /* Lune en mode clair */
+}
+
+/* Style pour le soleil en mode sombre */
+.dark-mode #dark-mode-toggle {
+  background-image: url('image/soleil.png'); /* Soleil en mode sombre */
+}
+
+
+  
+
+  main {
+    padding: 20px;
+  }
+  
+  .dark-mode {
+    background-color: #151414;
+    color: #f3f2f2;
+  }
+  
+  .dark-mode header {
+    background-color: #262528;
+  }
+  
+  .dark-mode button {
+    background-color: #cccdcf;
+  }
+  
